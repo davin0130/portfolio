@@ -1,6 +1,9 @@
 import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+
+import Home from './pages/Home';
 import './App.css';
 
 function App() {
@@ -13,9 +16,14 @@ function App() {
     }, []);
 
     return (
-        <div>
-            백엔드에서 가져온 데이터입니다 : {hello}
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />}></Route>
+            </Routes>
+        </BrowserRouter>
+        // <div>
+        //     백엔드에서 가져온 데이터입니다 : {hello}
+        // </div>
     );
 }
 
