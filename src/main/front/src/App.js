@@ -1,19 +1,10 @@
 import logo from './logo.svg';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import React, {useEffect, useState} from 'react';
-import axios from 'axios';
 
 import Home from './pages/Home';
 import './App.css';
 
 function App() {
-    const [hello, setHello] = useState('')
-
-    useEffect(() => {
-        axios.get('/api/hello')
-        .then(response => setHello(response.data))
-        .catch(error => console.log(error))
-    }, []);
 
     return (
         <BrowserRouter>

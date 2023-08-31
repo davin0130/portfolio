@@ -1,14 +1,60 @@
 import { Link } from "react-router-dom";
-import Header from './Header';
+import React, {useEffect, useState} from 'react';
+import axios from 'axios';
+
+import Header, { LinkItem } from './Header';
 import Footer from './Footer';
 
 function Home() {
+  const [hello, setHello] = useState('')
+
+  useEffect(() => {
+      axios.get('/api/hello')
+      .then(response => setHello(response.data))
+      .catch(error => console.log(error))
+  }, []);
   return (
-    <div>
+    <div className="App">
+      <div className="App-header">
         <Header></Header>
-        <Link to="/">홈</Link>
-        <Link to="/">홈</Link>
+      </div>
+        
+      <div className="App-Main">
+        <div className="">
+          로고
+        </div>
+        <div>
+          안녕하세요! 웹 서비스 기획자 정다빈입니다.<br/>
+          <LinkItem to="/">Play with me!</LinkItem>
+          <br/>
+          
+          <h3>#Record</h3>
+          시큐어코딩 교육 훈련 플랫폼 기획<br/>
+          사이버보안 챌린지 통합 플랫폼 리뉴얼 기획<br/>
+          시큐어코딩 교육 컨텐츠 개발<br/>
+          사이버보안 AI 빅데이터 챌린지 PL<br/>
+          개인정보 가명익명 처리 경진대회 PL<br/>
+          
+          <h3>#project</h3>
+          교통카드 충전 애플리케이션 취약점 분석<br/>
+          TAGO | 공유 모빌리티 웹 애플리케이션 개발<br/>
+          Bobby | Tennis 스포츠센터 운영 웹 애플리케이션 기획<br/>
+
+          
+          <h3>#introduce</h3>
+          
+          <h3>#experience</h3>
+          K-Shield 주니어<br/>
+          A.idle    <br/>
+
+
+        </div>
+         {hello}
+      </div>
+
+      <div className="App-footer">
         <Footer></Footer>
+      </div>
     </div>
   );
 }
