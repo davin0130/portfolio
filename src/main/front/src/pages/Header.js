@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
+import Menubar from '../components/Header/Menubar';
 
 export const LinkItem = styled(Link)`
   color: #61dafb;
@@ -13,15 +14,27 @@ export const LinkItem = styled(Link)`
 function Header() {
     return (
       <div>
-        <div className="header-left">
-          <LinkItem to="/">홈</LinkItem>
-        </div>
         <div className="header-menubar">
-          <LinkItem to="/menu">#Introduce</LinkItem>
-          <LinkItem to="/menu">#Record</LinkItem>
-          <LinkItem to="/menu">#Project</LinkItem>
-          <LinkItem to="/menu">#experience</LinkItem>
-          <LinkItem to="/menu">Play with me</LinkItem>
+          {/* <Menubar></Menubar> */}
+          <input type="checkbox" id="check_box" />
+          <label for="check_box">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div id="side_menu">
+              <Link to='/intro'>자기소개</Link>
+            <ul>
+              <li><a href="/intro">자기소개</a></li>
+              <li><a href="#">이력 및 경력</a></li>
+              <li><a href="#">프로젝트</a></li>
+              <li><a href="#">경험</a></li>
+              <li><a href="#">Play with me!</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="header-center">
+          <LinkItem to="/">BLUE SOFY</LinkItem>
         </div>
         <div className="header-right">
           <LinkItem to="/signin">로그인</LinkItem>

@@ -16,7 +16,7 @@ function Home() {
   return (
     <div className="App">
       <div className="App-header">
-        <Header></Header>
+        <Header />
       </div>
         
       <div className="App-Main">
@@ -53,7 +53,7 @@ function Home() {
       </div>
 
       <div className="App-footer">
-        <Footer></Footer>
+        <Footer />
       </div>
     </div>
   );
