@@ -23,7 +23,7 @@ function Header() {
             <span></span>
           </label>
           <div id="side_menu">
-              <Link to='/intro'>자기소개</Link>
+              {/* <Link to='/intro'>자기소개</Link> */}
             <ul>
               <li><a href="/intro">자기소개</a></li>
               <li><a href="#">이력 및 경력</a></li>
@@ -34,11 +34,10 @@ function Header() {
           </div>
         </div>
         <div className="header-center">
-          <LinkItem to="/">BLUE SOFY</LinkItem>
+          <LinkItem to="/"><img className="mainlogo" src="img/bluesofy-logo-white.png" width="150" alt="mainLogo"/></LinkItem>
         </div>
         <div className="header-right">
-          <LinkItem to="/signin">로그인</LinkItem>
-          <LinkItem to="/signup">회원가입</LinkItem>
+          <LinkItem className="mymenu" to="/signin">로그인</LinkItem>
         </div>
       </div>
     );

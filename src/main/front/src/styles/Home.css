@@ -1,0 +1,27 @@
+.content1{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    height: 250px;
+}
+.content1-left{
+    border: 1px solid rgba(23, 32, 158, 0.795);
+    height: 200px;
+    width: 48%;
+    float: left;
+}
+.content1-right{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    width: 48%;
+    float: right;
+    height: 180px;
+    line-height: 25px;
+    text-align: left;
+    padding: 15px;
+}
+.content1-right:hover{
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.9);
+    margin-top: -5px;
+    margin-left: -3px;
+    transition: all ease 0.2s 0s;
+}
