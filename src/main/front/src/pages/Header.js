@@ -37,7 +37,7 @@ function Header() {
           <LinkItem to="/"><img className="mainlogo" src="img/bluesofy-logo-white.png" width="150" alt="mainLogo"/></LinkItem>
         </div>
         <div className="header-right">
-          <LinkItem className="mymenu" to="/signin">로그인</LinkItem>
+          <LinkItem className="mymenu" to="/signin">Sign in</LinkItem>
         </div>
       </div>
     );
