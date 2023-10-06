@@ -12,34 +12,36 @@
     margin: 100px 0 0 800px;
 }
 /* ========================================================= */
-
 .content1{
-    background-color: rgba(0, 0, 0, 0.3);
     padding: 50px;
-    height: 250px;
+    height: 800px;
+    /* background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9) ),url(../images/main-image.png); */
+    /* height: 100%;  */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.content1-left{
-    border: 1px solid rgba(23, 32, 158, 0.795);
-    height: 200px;
-    width: 46%;
-    float: left;
+.content1 .main-title{
+    
 }
-.content1-right{
-    /* background-color: rgba(0, 0, 0, 0.4); */
+/* .content1-right{
+    border: 1px solid red;
     border-radius: 5px;
-    width: 46%;
     float: right;
-    height: 180px;
-    line-height: 25px;
+    font-size: 20px;
     text-align: left;
     padding: 15px;
-}
-.content1-right:hover{
+    margin-top: 300px;
+} */
+
+.cr2{margin-left: 100px;}
+.cr3{margin-left: 50px;}
+/* .content1-right:hover{
     box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.9);
     margin-top: -5px;
     margin-left: -3px;
     transition: all ease 0.3s 0s;
-}
+} */
 
 /* ========================================================= */
 .play{

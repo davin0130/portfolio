@@ -1,13 +1,12 @@
-body{width:1250px; margin: 0 auto;}
+body{width:1920px; margin: 0 auto;}
 
 .App {
   text-align: center;
-  font-size: 13px;
-  background-color: rgb(40, 44, 52);
-  background:linear-gradient(135deg, 
-   rgba(40,44,52,1)   0%,
-   rgba(40,44,52,0.6) 70%, 
-   rgba(40,44,52,1)   100%);
+  font-size: 14px;
+  background:linear-gradient(180deg, 
+   rgba(40, 44, 52, 1)   0%, 
+   rgba(40, 44, 52, 1)   40%, 
+   rgba(55, 28, 134, 1)  100%);
   color: white;
 }
 
@@ -129,23 +128,21 @@ body{width:1250px; margin: 0 auto;}
 
 .App-Main{
   color: white;
-  height: 1400px;
   padding-top: 60px;
   /* background-color: rgba(112, 106, 18, 0.651);
   color: rgb(255, 238, 0); */
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 100px);
 }
 
 /* ================================================================== */
 .App-footer{
-  background-color: rgb(58, 63, 73);
   color: white;
-  /* background-color: rgba(107, 16, 16, 0.582);
-  color: rgba(240, 74, 74, 0.973); */
-  height: 100px;
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 80px;
   margin-top: auto;
   text-align: left;
-  padding: 20px;
+  padding: 30px 40px;
+  width: 1841px;
   line-height: 25px;
 }
 
