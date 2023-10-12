@@ -80,9 +80,9 @@ function Home() {
                 Professional Tech
               </div>
               <div className="c2-desc">
-              좋은 아이디어를<br />
-              보기 좋게 잘 만들 수 있도록<br />
-              설계, 계획하고 관리하는 사람
+              전문적인 기술 지식을 습득하여<br />
+              환경과 상황에 맞추어 적절한 기술을 사용하고<br />
+              완성도 높은 결과물을 보여줄 수 있는 사람
               </div>
             </div>
 
@@ -94,9 +94,9 @@ function Home() {
                 Killing Design
               </div>
               <div className="c2-desc">
-              좋은 아이디어를<br />
-              보기 좋게 잘 만들 수 있도록<br />
-              설계, 계획하고 관리하는 사람
+              시각적으로 깔끔한 BASIC을 잃지 않으며 <br />
+              최신 트렌드에 민감하게 반응하고 <br />
+              컨셉에 맞는 디자인을 고를 수 있는 안목 있는 사람
               </div>
             </div>
           </div>
