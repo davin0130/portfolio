@@ -1,4 +1,4 @@
-body{width:1920px; margin: 0 auto;}
+/* body{width:1920px;} */
 
 .App {
   text-align: center;
@@ -7,7 +7,7 @@ body{width:1920px; margin: 0 auto;}
    rgba(40, 44, 52, 1)   0%, 
    rgba(40, 44, 52, 1)   40%, 
    rgba(55, 28, 134, 1)  100%);
-  color: white;
+  color: white; 
 }
 
 
@@ -129,8 +129,8 @@ body{width:1920px; margin: 0 auto;}
 .App-Main{
   color: white;
   padding-top: 60px;
-  /* background-color: rgba(112, 106, 18, 0.651);
-  color: rgb(255, 238, 0); */
+  margin: 0 auto;
+  width: 1920px;
   min-height: calc(100vh - 100px);
 }
 
@@ -139,14 +139,11 @@ body{width:1920px; margin: 0 auto;}
   color: white;
   background-color: rgba(255, 255, 255, 0.05);
   height: 80px;
-  margin-top: auto;
   text-align: left;
   padding: 30px 40px;
-  width: 1841px;
   line-height: 25px;
 }
-
-
+.footer{width: 1920px;margin: 0 auto;}
 /* ================================================================== */
 
 

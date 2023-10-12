@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Menubar from '../components/Header/Menubar';
 
 export const LinkItem = styled(Link)`
-  color: #61dafb;
+  color: #fff;
   display: block;
   font-size: 15px;
   text-decoration: none;
