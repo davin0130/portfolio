@@ -1,7 +1,12 @@
 
 import { Link } from "react-router-dom";
+import React, {useState} from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faUser, faTimes } from '@fortawesome/free-solid-svg-icons'
+
 import styled from 'styled-components';
-import Menubar from '../components/Header/Menubar';
+// import Menubar from '../components/Header/Menubar';
 
 export const LinkItem = styled(Link)`
   color: #fff;
@@ -12,16 +17,20 @@ export const LinkItem = styled(Link)`
 `;
 
 function Header() {
+  const [isToggled, setIsToggled] = useState(false);
+  const [signToggled, setSignToggled] = useState(false);
     return (
       <div>
-        <div className="header-menubar">
-          {/* <Menubar></Menubar> */}
-          <input type="checkbox" id="check_box" />
-          <label for="check_box">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+        <div className="header-menubar" isToggled={isToggled} signToggled={signToggled}>
+          <div className="toggle" onClick={() => {setIsToggled(!isToggled);}} >
+           <FontAwesomeIcon icon={!isToggled ? faBars : faTimes} />
+          </div>
+        <div className="header-center">
+          <LinkItem to="/"><img className="mainlogo" src="img/bluesofy-logo-white.png" width="150" alt="mainLogo"/></LinkItem>
+        </div>
+        <div className="sign" onClick={() => {setSignToggled(!signToggled);}} >
+          <FontAwesomeIcon icon={!signToggled ? faUser : faTimes} />
+        </div>
           <div id="side_menu">
               {/* <Link to='/intro'>자기소개</Link> */}
             <ul>
@@ -33,11 +42,9 @@ function Header() {
             </ul>
           </div>
         </div>
-        <div className="header-center">
-          <LinkItem to="/"><img className="mainlogo" src="img/bluesofy-logo-white.png" width="150" alt="mainLogo"/></LinkItem>
-        </div>
         <div className="header-right">
           <LinkItem className="mymenu" to="/signin">Sign in</LinkItem>
+          <LinkItem className="mymenu" to="/">Sign up</LinkItem>
         </div>
       </div>
     );
