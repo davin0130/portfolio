@@ -10,42 +10,84 @@ import styled from 'styled-components';
 
 export const LinkItem = styled(Link)`
   color: #fff;
-  display: block;
   font-size: 15px;
   text-decoration: none;
   cursor: pointer;
+  margin: 30px;
 `;
 
+const Menu = styled.div`
+@media screen and (max-width: 920px) {
+  flex-wrap: wrap;
+
+  .header_sign {
+    display: ${(props) => (props.signToggled ? "block" : "none")};
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .header_menulist {
+    display: ${(props) => (props.isToggled ? "block" : "none")};
+    flex-direction: column;
+    width: 90%;
+  }
+`
 function Header() {
   const [isToggled, setIsToggled] = useState(false);
   const [signToggled, setSignToggled] = useState(false);
     return (
       <div>
-        <div className="header-menubar" isToggled={isToggled} signToggled={signToggled}>
-          <div className="toggle" onClick={() => {setIsToggled(!isToggled);}} >
+        <Menu className="header-menubar" isToggled={isToggled} signToggled={signToggled}>
+          <div className="toggle" onClick={() => {setIsToggled(!isToggled); console.log(isToggled)}} >
            <FontAwesomeIcon icon={!isToggled ? faBars : faTimes} />
           </div>
-        <div className="header-center">
-          <LinkItem to="/"><img className="mainlogo" src="img/bluesofy-logo-white.png" width="150" alt="mainLogo"/></LinkItem>
-        </div>
-        <div className="sign" onClick={() => {setSignToggled(!signToggled);}} >
-          <FontAwesomeIcon icon={!signToggled ? faUser : faTimes} />
-        </div>
-          <div id="side_menu">
-              {/* <Link to='/intro'>자기소개</Link> */}
-            <ul>
-              <li><a href="/intro">자기소개</a></li>
-              <li><a href="#">이력 및 경력</a></li>
-              <li><a href="#">프로젝트</a></li>
-              <li><a href="#">경험</a></li>
-              <li><a href="#">Play with me!</a></li>
-            </ul>
+          {/* <div className="header-center"> */}
+          <div className="logo">
+            <LinkItem to="/"><img className="mainlogo" src="img/bluesofy-logo-white.png" width="150" alt="mainLogo"/></LinkItem>
           </div>
+          <div className="sign" onClick={() => {setSignToggled(!signToggled);}} >
+            <FontAwesomeIcon icon={!signToggled ? faUser : faTimes} />
+          </div>
+          {/* <div id="side_menu"> */}
+          <div className="header-right">
+            <div className="header_menulist">
+              <ul>
+                <li>
+                  <a href="/intro">
+                    <span>자기소개</span>
+                    <span>INTRODUCE</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <span>포트폴리오</span>
+                    <span>PORTFOLIO</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <span>게임</span>
+                    <span>PLAY</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="header_sign">
+              <ul>
+                <li><a href="/">Sign IN</a></li>
+                <li><a href="/">Sign UP</a></li>
+              </ul>
+            </div>
         </div>
-        <div className="header-right">
-          <LinkItem className="mymenu" to="/signin">Sign in</LinkItem>
-          <LinkItem className="mymenu" to="/">Sign up</LinkItem>
-        </div>
+          {/* <div className="header_menulist">
+            <ul>
+              <li><a href="/intro">INTRODUCE</a></li>
+              <li><a href="#">PORTFOLIO</a></li>
+              <li><a href="#">PLAY</a></li>
+            </ul>
+          </div> */}
+        </Menu>
+        
       </div>
     );
   }

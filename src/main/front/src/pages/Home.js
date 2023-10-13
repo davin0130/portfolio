@@ -35,22 +35,22 @@ function Home() {
               <div className='content1-left'>
                 <div className='stat'>
                   <div className='stat-title'>contents</div>
-                  <div className='stat-content doongs1'>21</div>
+                  <div className='stat-content neon_purple doongs1'>21</div>
                 </div>
                 
                 <div className='stat'>
                   <div className='stat-title'>career</div>
-                  <div className='stat-content doongs3'>3</div>
+                  <div className='stat-content neon_purple doongs3'>3</div>
                 </div>
                 
                 <div className='stat'>
                   <div className='stat-title'>projects</div>
-                  <div className='stat-content doongs1'>25</div>
+                  <div className='stat-content neon_purple doongs1'>25</div>
                 </div>
                 
                 <div className='stat'>
                   <div className='stat-title'>skills</div>
-                  <div className='stat-content doongs2'>3</div>
+                  <div className='stat-content neon_purple doongs2'>3</div>
                 </div>
               </div>
           </div>

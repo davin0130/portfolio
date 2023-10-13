@@ -19,14 +19,7 @@
     color: transparent;
     background-clip: text;
     -webkit-box-reflect: below -15px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
-    /* text-shadow: 0 0 4px #fff,
-    0 0 11px #fff,
-    0 0 19px #fff,
-    0 0 40px #6e3efd,
-    0 0 80px #6e3efd,
-    0 0 90px #6e3efd,
-    0 0 100px #6e3efd,
-    0 0 150px #6e3efd; */
+    
 }
 .content1-right{
     font-size: 40px;
@@ -68,7 +61,7 @@
 .c2{
     margin: 150px 50px;
     padding: 30px;
-    width: 25%;
+    width: 21%;
     text-align: left;
     float: left;
 }
@@ -155,15 +148,29 @@
 .doongs2{animation: doong-small 1.2s infinite alternate;}
 .doongs3{animation: doong-small 1.4s infinite alternate;}
 
+.doongm1{animation: doong-medium 0.8s infinite alternate;}
+.doongm2{animation: doong-medium 1.2s infinite alternate;}
+.doongm3{animation: doong-medium 1.4s infinite alternate;}
+
+.doongl1{animation: doong-large 0.8s infinite alternate;}
+.doongl2{animation: doong-large 1.2s infinite alternate;}
+.doongl3{animation: doong-large 1.4s infinite alternate;}
+
 .rotate_circle{animation: rotate_circle 20s linear infinite; transform-origin: 50% 50%;}
 
 .text_fly_right{animation: text_fly_right 2s}
 .text_fly_left{animation: text_fly_left 2s}
+.neon_purple{text-shadow: 
+    0 0 40px #6e3efd,
+    0 0 80px #6e3efd,
+    0 0 90px #6e3efd,
+    0 0 100px #6e3efd,
+    0 0 150px #6e3efd;}
 
 /* ======================================================= */
 @keyframes doong-small{
     0%{transform:translate(0,0);}
-    100%{transform:translate(0,-3px);}
+    100%{transform:translate(0,-8px);}
 }
 @keyframes doong-medium{
     0%{transform:translate(0,0);}
@@ -171,7 +178,7 @@
 }
 @keyframes doong-large{
     0%{transform:translate(0,0);}
-    100%{transform:translate(0,23px);}
+    100%{transform:translate(0,-18px);}
 }
 @keyframes rotate_circle{
     100% {

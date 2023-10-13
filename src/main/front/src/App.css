@@ -22,7 +22,7 @@ body{
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
-.App-header .header-menubar{
+/* .App-header .header-menubar{
   float: left;
   width: 20%;
 }
@@ -38,9 +38,89 @@ body{
 }
 .App-header .header-right .mymenu{
   color: rgb(212, 210, 210);
+} */
+.header-menubar{
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin: 10px;
+  font-size: 2rem;
 }
 
 
+.header-right {display: flex;}
+.header-right li{
+  list-style: none;
+  display: inline;
+  font-size: 15px;
+  margin: 30px 20px;
+}
+.header-right li a{
+  text-decoration: none;
+  color: white;
+}
+.header-right li a span:first-child{
+  opacity: 0; 
+  position: absolute;
+}
+.header-right li a:hover span:first-child{
+  opacity: 1; 
+}
+.header-right li a:hover span:last-child{opacity: 0;}
+
+
+/* .header-right li a::before{display: block; content: attr(title); transition: all 0.5s;}
+.header-right li a::after{display: block; content: attr(title); font-weight: bold; transition: all 0.5s;}
+.header-right li a:hover::before{transform: translateY(-40px);}
+.header-right li a:hover::after{transform: translateY(-40px);} */
+
+
+
+
+
+.toggle {
+  display: none;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+}
+
+.sign {
+  display: none;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+}
+
+@media screen and (max-width: 920px) {
+  /* flex-wrap: wrap; */
+
+  .header-right {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header_menulist {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header_menulist li a,
+  .header-right .mymenu {
+    display: block;
+    padding: 10px;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .sign {
+    display: block;
+  }
+}
 
 /* ================================================================== */
 
