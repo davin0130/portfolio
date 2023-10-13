@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Header from './pages/Header';
 import Footer from './pages/Footer';
 import Introduce from './components/Introduce/Introduce';
+import MyPage from './components/Header/MyPage';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <div className="App-Main">
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
+                    <Route path="/signin" element={<MyPage />}></Route>
                     <Route path="/intro" element={<Introduce />}></Route>
                 </Routes>
             </div>

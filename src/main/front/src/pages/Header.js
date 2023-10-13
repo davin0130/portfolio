@@ -74,8 +74,18 @@ function Header() {
             </div>
             <div className="header_sign">
               <ul>
-                <li><a href="/">Sign IN</a></li>
-                <li><a href="/">Sign UP</a></li>
+                <li>
+                  <a href="/">
+                    <span>로그인</span>
+                    <span>Sign In</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <span>회원가입</span>
+                    <span>Sign Up</span>
+                  </a>
+                </li>
               </ul>
             </div>
         </div>

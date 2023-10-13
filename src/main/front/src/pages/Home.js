@@ -28,9 +28,9 @@ function Home() {
             {/* <div className="main-image"></div> */}
               <p className="main-title">PRODUCT MANAGER</p>
               <div className="content1-right">
-                <p className="cr1 text_fly_right">더 나은 소비자의 일상을 생각하<span style={fontPoint}>GO</span></p>
-                <p className="cr2 text_fly_left">파트너와 원활하게 협업하<span style={fontPoint}>GO</span></p>
-                <p className="cr3 text_fly_right">목표하<span style={fontPoint}>GO</span> 성취하는</p>            
+                <p className="text_fly_right">더 나은 소비자의 일상을 생각하<span style={fontPoint}>GO</span></p>
+                <p className="text_fly_left">파트너와 원활하게 협업하<span style={fontPoint}>GO</span></p>
+                <p className="text_fly_right">목표하<span style={fontPoint}>GO</span> 성취하는</p>            
               </div>
               <div className='content1-left'>
                 <div className='stat'>
