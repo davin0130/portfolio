@@ -25,7 +25,6 @@ function Home() {
       <div className="home">
           {/* <div className="circle rotate_circle"></div> */}
           <div className="content1">
-            {/* <div className="main-image"></div> */}
               <p className="main-title">PRODUCT MANAGER</p>
               <div className="content1-right">
                 <p className="text_fly_right">더 나은 소비자의 일상을 생각하<span style={fontPoint}>GO</span></p>

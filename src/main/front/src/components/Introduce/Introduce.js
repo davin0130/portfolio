@@ -1,10 +1,14 @@
+import '../../assets/styles/Intro.css';
+
 export default function Introduce() {
     return (
         <div>
-            더 나은 소비자의 일상을 생각하GO,<br />
-            파트너와 원활하게 협업하GO,<br />
-            목표하GO, 성취하는<br />
-            SERVICE PLANNER<br />
+            <div className="intro-image">
+                <div>Career</div>
+                <div>
+                    
+                </div>
+            </div>
 
             CAREER<br />
             (주)컬처메이커스 기술개발사업부/주임연구원 1년 1개월<br />
