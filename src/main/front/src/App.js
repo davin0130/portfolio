@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Header from './pages/Header';
 import Footer from './pages/Footer';
 import Introduce from './components/Introduce/Introduce';
+import Portfolio from './components/Portfolio/Portfolio';
 import MyPage from './components/Header/MyPage';
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/signin" element={<MyPage />}></Route>
                     <Route path="/intro" element={<Introduce />}></Route>
+                    <Route path="/portfolio" element={<Portfolio />}></Route>
                 </Routes>
             </div>
             <div className="App-footer">

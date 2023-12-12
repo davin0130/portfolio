@@ -4,7 +4,7 @@ import axios from 'axios';
 import { LinkItem } from './Header';
 import '../assets/styles/Home.css';
 
-function Home() {
+function Home1() {
   const [hello, setHello] = useState('')
 
   useEffect(() => {
@@ -23,24 +23,6 @@ function Home() {
   return (
     <div>
       <div className="home">
-        <div className='menu'>
-          <div className='menu-li'>
-            <p>Experience & Career</p>
-          </div>
-          <div className='menu-li'>
-            <p>Skills</p>
-          </div>
-          <div className='menu-li'>
-            <p>Projects</p>
-          </div>
-        </div>
-        <div className='main-title'>
-          Product Manager
-        </div>
-        <div className='main-desc'>
-          더 나은 사용자의 경험을 고민하GO<br />
-          파트너와 원활하게 협업하GO 목표하GO 성취하는
-        </div>
           {/* <div className="circle rotate_circle"></div> */}
           {/* <div className="content1">
               <p className="main-title">PRODUCT MANAGER</p>
@@ -219,4 +201,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home1;

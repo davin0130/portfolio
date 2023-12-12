@@ -1,9 +1,10 @@
 body{
   /* width:1920px; */
-  background:linear-gradient(180deg, 
+  background-color: black;
+  /* background:linear-gradient(180deg, 
    rgba(40, 44, 52, 1)   0%, 
    rgba(40, 44, 52, 1)   40%, 
-   rgba(55, 28, 134, 1)  100%);
+   rgba(55, 28, 134, 1)  100%); */
 }
 
 .App {

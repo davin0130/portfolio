@@ -43,7 +43,7 @@ function Header() {
           </div>
           {/* <div className="header-center"> */}
           <div className="logo">
-            <LinkItem to="/"><img className="mainlogo" src="img/bluesofy-logo-white.png" width="150" alt="mainLogo"/></LinkItem>
+            <LinkItem to="/"><img className="mainlogo" src="judyjung_white.png" width="150" alt="mainLogo"/></LinkItem>
           </div>
           <div className="sign" onClick={() => {setSignToggled(!signToggled);}} >
             <FontAwesomeIcon icon={!signToggled ? faUser : faTimes} />
@@ -59,7 +59,7 @@ function Header() {
                   </a>
                 </li>
                 <li>
-                  <a href="/">
+                  <a href="/portfolio">
                     <span>포트폴리오</span>
                     <span>PORTFOLIO</span>
                   </a>
